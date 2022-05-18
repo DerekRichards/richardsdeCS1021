@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="493.0" prefWidth="583.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="583.0">
+               <children>
+                  <Label text="URL" />
+                  <TextField fx:id="url" prefHeight="25.0" prefWidth="375.0" />
+                  <Button fx:id="analyzeButton" mnemonicParsing="false" onAction="#analyze" prefHeight="25.0" prefWidth="154.0" text="Analyze" />
+               </children></HBox>
+            <HBox prefHeight="27.0" prefWidth="583.0">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Size" />
+                        <TextField fx:id="size" editable="false" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="98.0" prefWidth="381.0">
+                     <children>
+                        <Label text="Download Time" />
+                        <TextField fx:id="time" editable="false" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+               </children></HBox>
+            <HBox prefHeight="27.0" prefWidth="583.0">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Port" />
+                        <TextField fx:id="port" editable="false" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="99.0" prefWidth="381.0">
+                     <children>
+                        <Label text="Host" />
+                        <TextField fx:id="host" editable="false" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+               </children></HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="24.0" prefWidth="583.0">
+               <children>
+                  <Label text="Timeout" />
+                  <TextField fx:id="timeout" prefHeight="25.0" prefWidth="376.0" />
+                  <Button fx:id="setButton" mnemonicParsing="false" onAction="#setTimeout" prefHeight="25.0" prefWidth="157.0" text="Set" />
+               </children></HBox>
+            <TextArea fx:id="webpage" prefHeight="392.0" prefWidth="583.0" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
